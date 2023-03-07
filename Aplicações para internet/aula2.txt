@@ -1,0 +1,20 @@
+TAGS básicas
+Tag
+<html> Define um documento HTML
+<body> Define o corpo de um documento
+<h1>
+...  Define cabeçalhos 1 a 6
+<h6> 
+<p> Define um parágrafo
+<br> Insere uma quebra de linha
+<hr> Define uma linha horizontal
+<!-- --> Define um comentário
+<b> Formata um texto em negrito
+<big> Formata um texto com fonte maior
+<em> Formata um texto com ênfase
+<i> Formata um texto em itálico
+<small> Formata um texto com fonte pequena
+<strong> Formata um texto em destaque
+<sub> Formata um texto subscrito
+<sup> Formata um texto sobrescrito
+<ins> Formata um texto sublinhado

@@ -1,0 +1,45 @@
+\\\\ Primeira aula do curso ////
+
+Nota do semestre: 5 pontos de avaliaç e ativ. + 5 pts atv e projeto aplicado
+
+------------------------------------------------------------------------------------------------
+
+O que é WEB? Algo que tem uma URL(link/endereço) / Ambiente conectado 
+
+WWW - World Wide Web - 
+
+os três pilares da web são? identificadores, formatos e protocolos...
+
+Hipertexto - texto dinâmico com links endereçaveis na internet
+
+HTTP (protocolo - forma padronizada de fazer algo) (enviar e receber informações)
+
+Navegador solicita --(pagina)--> servidor
+servidor envia -------> cliente(navegador)
+
+// HTML | CSS | JAVASCRIPT \\
+
+    {}Arquitetura de sistemas web{}
+
+ºCriação de camadas: 
+{FRONT-END}
+    [BACK-END]
+        (DADOS)
+
+Apresentação: HTML CSS E JS
+Lógica: PHP, Java, Python
+Camada de fontes e geren de dados: MySQL, PostgreSQL, SQL Server
+ 
+protocolos -- exemplos: 
+
+HTTP(hypertext transfer); (mais comum)
+    Requisição e resposta;
+    
+FTP(file transfer);
+    Rede TCP/IP
+
+POP(post office protocol).
+    SMTP - envio;
+    POP3 - recebimento e baixa;
+    IMAP - recebimento, baixa e deixa uma copia no servidor.
+
