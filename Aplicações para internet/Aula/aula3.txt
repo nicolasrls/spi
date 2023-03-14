@@ -1,0 +1,15 @@
+Atalhos importantes VSCode
+
+Shift + Alt + F  ---- identar código
+Shift + Alt + Up/Down --- duplicar linha pra cima ou baixo
+Ctrl + G + número da linha --- vai a uma linha específica
+Ctrl + Backspace --- atalho pra excluir palavra anterior
+Ctrl + Shift + < ---- seleciona palavra anterior 
+! + enter ------ prepara corpo do html
+lorem ---- cria um texto aleatorio
+Ctrl + Alt + Up/Down ----- duplicar cursor acima ou baixo
+F2 ---- renomear Símbolo/Classe/Variavel
+Ctrl + P ---- paleta de comandos
+Ctrl + K --- terminal
+
+
