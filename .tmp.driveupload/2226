@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML<sup>Linguagem de Marcação de Hipertexto</sup></h1>
+        <h2>Tutoriais para iniciantes</h2>
+    </header>
+    <div>
+    <p> <ins><b>HTML </b></ins><i>(Linguagem de Marcação de Hipertexto)</i>
+        <img align="left" width="180" height="100" hspace="10"
+            src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_740,h_354/https://devporai.com.br/wp-content/uploads/2020/09/html5-740x354.jpg">
+        é o bloco de construção mais básico da web. <mark>Define o <br>
+            significado e a estrutura do conteúdo da web.</mark> Outras tecnologias além do HTML geralmente são <br>
+        usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento <br>
+        <i>(JavaScript)</i> de uma página da web.
+    </p>
+    </div>
+    <hr>
+    <section>
+        <p>
+        <table border="3" align="center">
+            <thead>
+                <caption>Tags úteis</caption>
+                <tr>
+                <tr>
+                    <th colspan="2">Tabela de Tags</th>
+                </tr>
+                <th>Tag</th>
+                <th>Utilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center">a</td>
+                    <td> Adiciona um link na marcação </td>
+                </tr>
+                <tr>
+                    <td align="center">img</td>
+                    <td>Adiciona uma imagem no código</td>
+                </tr>
+                <tr>
+                    <td align="center">hr</td>
+                    <td>Adiciona uma linha horizontal</td>
+                </tr>
+                <tr>
+                    <td align="center">strong</td>
+                    <td>Formata o texto em destaque</td>
+                </tr>
+                <tr>
+                    <td align="center">sub</td>
+                    <td>Formata o texto subescrito</td>
+                </tr>
+                <tr>
+                    <td align="center">p</td>
+                    <td>Abre um paragrafo</td>
+                </tr>
+                <tr>
+                    <td align="center">h1</td>
+                    <td>Define o cabeçalho 1</td>
+                </tr>
+                <tr>
+                    <td align="center">ins</td>
+                    <td>Formata um texto sublinhado</td>
+                </tr>
+            </tbody>
+        </table>
+        </p>
+    </section>
+    <footer>
+        <hr>
+        <p>Exemplos de protocolos Web:</p>
+        <ol type="a">
+            <li>FTP: File Transfer Protocol</li>
+            <li>HTTP: Hypertext Transfer Protocol</li>
+            <li>POP: Email Transfer Protocol</li>
+            <li>IP: Internet Protocol</li>
+            <li>SSL: Secure Sockets Layer</li>
+        </ol>
+        <ul>
+            <li>FTP: File Transfer Protocol</li>
+            <li>HTTP: Hypertext Transfer Protocol</li>
+            <li>POP: Email Transfer Protocol</li>
+            <li>IP: Internet Protocol</li>
+            <li>SSL: Secure Sockets Layer</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
