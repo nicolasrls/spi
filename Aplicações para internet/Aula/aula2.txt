@@ -19,3 +19,4 @@ Tag
 <sup> Formata um texto sobrescrito
 <ins> Formata um texto sublinhado
 <img> Adiciona imagem no HTML
+
