@@ -1,4 +1,0 @@
-1º linguagem de prog - Assembly 
-
-CPU só entende linguagem de máquina (instruções em binario) - Conjunto de instruções
-
