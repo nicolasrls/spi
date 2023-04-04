@@ -14,21 +14,22 @@
     <h3>Favor preencher seus dados para que possamos entrar em contato!</h3>
 
 
-    <form>
+    <form action="obrigado.html" method="get">
         <label>Nome:</label>
-        <input type="text" title="Insira seu nome"><br>
+        <input type="text" title="Insira seu nome" required><br>
         <label>Email:</label>
-        <input type="email" title="Insira um email válido"><br><br>
+        <input type="email" title="Insira um email válido" required><br><br>
         <label>Assunto:</label>
-        <select name="Assunto" title = "Escolha uma opção">
+        <select name="Assunto" title="Escolha uma opção" required>
             <option value="compras">Setor de compras</option>
             <option value="vendas">Setor de vendas</option>
             <option value="marketing">Setor de marketing</option>
             <option value="TI" selected>Setor de TI</option>
         </select><br><br>
         <label>Mensagem:</label>
-        <textarea title="Insira sua mensagem"></textarea><br>
-        <input type="button" value="Enviar">
+        <textarea title="Insira sua mensagem" required></textarea><br><br>
+        <input type="checkbox" value="termo" required><label>Concordo com os Termos de Privacidade do Site</label><br>
+        <br><input type="submit" value="Enviar mensagem">
     </form>
 </body>
 
