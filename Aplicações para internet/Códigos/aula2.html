@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
 </head>
 
@@ -24,70 +21,113 @@
     </p>
     <br>
     <hr>
-    <section style="width:45%;float:left;;background-color: rgb(247, 247, 247);">
-        <table border="3" align="center" style="background-color: aqua;">
-            <thead>
-                <caption>Tags úteis</caption>
-                <tr>
-                <tr>
-                    <th colspan="2">Tabela de Tags</th>
-                </tr>
-                <th>Tag</th>
-                <th>Utilidade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td align="center">a</td>
-                    <td> Adiciona um link na marcação </td>
-                </tr>
-                <tr>
-                    <td align="center">img</td>
-                    <td>Adiciona uma imagem no código</td>
-                </tr>
-                <tr>
-                    <td align="center">hr</td>
-                    <td>Adiciona uma linha horizontal</td>
-                </tr>
-                <tr>
-                    <td align="center">strong</td>
-                    <td>Formata o texto em destaque</td>
-                </tr>
-                <tr>
-                    <td align="center">sub</td>
-                    <td>Formata o texto subescrito</td>
-                </tr>
-                <tr>
-                    <td align="center">p</td>
-                    <td>Abre um paragrafo</td>
-                </tr>
-                <tr>
-                    <td align="center">h1</td>
-                    <td>Define o cabeçalho 1</td>
-                </tr>
-                <tr>
-                    <td align="center">ins</td>
-                    <td>Formata um texto sublinhado</td>
-                </tr>
-            </tbody>
-        </table>
+    <section style="display: flex;">
+        <div style="width:50%;background-color: rgb(247, 247, 247);display: flex;">
+            <table style="background-color: aqua;border: 2px;" border="1" align="center">
+                <thead>
+                    <caption>Tags úteis</caption>
+                    <tr>
+                    <tr>
+                        <th colspan="2">Tabela de Tags</th>
+                    </tr>
+                    <th>Tag</th>
+                    <th>Utilidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">a</td>
+                        <td> Adiciona um link na marcação </td>
+                    </tr>
+                    <tr>
+                        <td align="center">img</td>
+                        <td>Adiciona uma imagem no código</td>
+                    </tr>
+                    <tr>
+                        <td align="center">hr</td>
+                        <td>Adiciona uma linha horizontal</td>
+                    </tr>
+                    <tr>
+                        <td align="center">strong</td>
+                        <td>Formata o texto em destaque</td>
+                    </tr>
+                    <tr>
+                        <td align="center">sub</td>
+                        <td>Formata o texto subescrito</td>
+                    </tr>
+                    <tr>
+                        <td align="center">p</td>
+                        <td>Abre um paragrafo</td>
+                    </tr>
+                    <tr>
+                        <td align="center">h1</td>
+                        <td>Define o cabeçalho 1</td>
+                    </tr>
+                    <tr>
+                        <td align="center">ins</td>
+                        <td>Formata um texto sublinhado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="width:50%;background-color: rgb(110, 91, 91);display: flex;align-items: center;">
+            <p>Exemplos de protocolos Web:</p>
+            <ol type="a">
+                <li>FTP: File Transfer Protocol</li>
+                <li>HTTP: Hypertext Transfer Protocol</li>
+                <li>POP: Email Transfer Protocol</li>
+                <li>IP: Internet Protocol</li>
+                <li>SSL: Secure Sockets Layer</li>
+            </ol>
+            <ul>
+                <li>FTP: File Transfer Protocol</li>
+                <li>HTTP: Hypertext Transfer Protocol</li>
+                <li>POP: Email Transfer Protocol</li>
+                <li>IP: Internet Protocol</li>
+                <li>SSL: Secure Sockets Layer</li>
+            </ul>
+        </div>
     </section>
-    <footer style="width:51%;float:right;background-color: rgb(110, 91, 91);">
-        <p style="text-align: center;">Exemplos de protocolos Web:</p>
-        <ol type="a">
-            <li>FTP: File Transfer Protocol</li>
-            <li>HTTP: Hypertext Transfer Protocol</li>
-            <li>POP: Email Transfer Protocol</li>
-            <li>IP: Internet Protocol</li>
-            <li>SSL: Secure Sockets Layer</li>
-        </ol>
-        <ul>
-            <li>FTP: File Transfer Protocol</li>
-            <li>HTTP: Hypertext Transfer Protocol</li>
-            <li>POP: Email Transfer Protocol</li>
-            <li>IP: Internet Protocol</li>
-            <li>SSL: Secure Sockets Layer</li>
-        </ul>
+    <section style="display:flex;align-items: baseline;column-gap: 5px;">
+        <section style="background-color: rgb(255, 0, 0);width: 33.3%;height: 200px;padding: 20px;">
+            <h2>
+                O que é CSS?
+            </h2>
+            <p>CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa
+                Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é facilmente utilizado com as
+                linguagens de marcação HTML ou XHTML. </p>
+        </section>
+        <section style="background-color: yellow;width: 33.3%;height: 200px;padding: 20px;">
+            <h2>
+                O que é HTML?
+            </h2>
+            <p>O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de
+                um website. Portanto, ele serve para dar significado e organizar as informações de uma página na web.
+                Sem isso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos.
+            </p>
+        </section>
+        <section style="background-color: green;width: 33.3%;height: 200px;padding: 20px;">
+            <h2>
+                O que é JavaScript?
+            </h2>
+            <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem
+                dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais
+                tecnologias da World Wide Web.</p>
+        </section>
+    </section>
+    <footer style="display: flex;align-items: baseline;column-gap: 5px;">
+        <section style="width: 25%; background-color: red;">
+            <p>1</p>
+        </section>
+        <section style="width: 25%; background-color: yellow;">
+            <p>2</p>
+        </section>
+        <section style="width: 25%; background-color: green;">
+            <p>3</p>
+        </section>
+        <section style="width: 25%;background-color: black;">
+            <p style="color: white;">4</p>
+        </section>
     </footer>
 </body>
 
