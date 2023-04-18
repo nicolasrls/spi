@@ -5,15 +5,27 @@
     <title>HTML</title>
 </head>
 
-<body>
-    <header>
+<body style="margin:0;">
+    <header id="topo" style="text-align: center; background-color: darkolivegreen; padding: 10px;font-size: 30px;">
         <h1>HTML<sup>Linguagem de Marcação de Hipertexto</sup></h1>
         <h2>Tutoriais para iniciantes</h2>
     </header>
+    <nav style="margin: 0;">
+        <ul
+            style="list-style: none; display: flex;justify-content: space-between;background-color: aquamarine; padding: 10px;">
+            <li style="flex-grow: 1;"><a href="aula2.html" style=" text-decoration: none;">Inicio</a></li>
+            <li style="flex-grow: 1;"><a href="aula2.html#HTML" style="text-decoration: none;">HTML</a></li>
+            <li style="flex-grow: 1;"><a href="aula2.html#tabela" style="text-decoration: none;">Tabela e Lista</a></li>
+            <li style="flex-grow: 1;"><a href="aula2.html#sobre" style="text-decoration: none">Sobre HTML, CSS e JS</a>
+            </li>
+            <li style="flex-grow: 1;"><a href="aula2.html#rodape" style="text-decoration: none">Links</a></li>
+            <li style="flex-grow: 1;"><a href="contato.html" style="text-decoration: none">Contato</a></li>
+        </ul>
+    </nav>
     <article style="width: 10%;margin-top: 30px;"><img align="left" width="180" height="100" hspace="10"
             src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_740,h_354/https://devporai.com.br/wp-content/uploads/2020/09/html5-740x354.jpg">
     </article>
-    <p style="width: 70%;"> <ins><b>HTML </b></ins><i>(Linguagem de Marcação de Hipertexto)</i>
+    <p id="HTML" style="width: 70%;"> <ins><b>HTML </b></ins><i>(Linguagem de Marcação de Hipertexto)</i>
         é o bloco de construção mais básico da web. <mark>Define o <br>
             significado e a estrutura do conteúdo da web.</mark> Outras tecnologias além do HTML geralmente são <br>
         usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento <br>
@@ -21,8 +33,8 @@
     </p>
     <br>
     <hr>
-    <section style="display: flex;">
-        <div style="width:50%;background-color: rgb(247, 247, 247);display: flex;">
+    <section id="tabela" style="display: flex;">
+        <div style="width:50%;background-color: aqua;display: flex;">
             <table style="background-color: aqua;border: 2px;" border="1" align="center">
                 <thead>
                     <caption>Tags úteis</caption>
@@ -88,7 +100,7 @@
             </ul>
         </div>
     </section>
-    <section style="display:flex;align-items: baseline;column-gap: 5px;">
+    <section id="sobre" style="display:flex;align-items: baseline;column-gap: 5px;">
         <section style="background-color: rgb(255, 0, 0);width: 33.3%;height: 200px;padding: 20px;">
             <h2>
                 O que é CSS?
@@ -115,19 +127,44 @@
                 tecnologias da World Wide Web.</p>
         </section>
     </section>
-    <footer style="display: flex;align-items: baseline;column-gap: 5px;">
-        <section style="width: 25%; background-color: red;">
-            <p>1</p>
-        </section>
-        <section style="width: 25%; background-color: yellow;">
-            <p>2</p>
-        </section>
-        <section style="width: 25%; background-color: green;">
-            <p>3</p>
-        </section>
-        <section style="width: 25%;background-color: black;">
-            <p style="color: white;">4</p>
-        </section>
+    <footer id="rodape" style="padding: auto;">
+        <div style="display: flex;align-items: baseline;column-gap: 5px;">
+            <section style="width: 25%; background-color: rgb(155, 52, 52);">
+                <p>Sobre</p>
+                <ul>
+                    <li><a href="aula2.html#topo">Topo</a></li>
+                    <li>Politica de privacidade</li>
+                    <li><a href="contato.html">Fale conosco</a></li>
+                </ul>
+            </section>
+            <section style="width: 25%; background-color: rgb(153, 153, 150);">
+                <p>Referências</p>
+                <ul>
+                    <li><a href="https://devporai.com.br" target="blank">Devporai</a></li>
+                    <li><a href="https://google.com.br" target="blank">Google</a></li>
+                    <li><a href="https://wikipedia.com" target="blank">Wikipedia</a></li>
+                </ul>
+            </section>
+            <section style="width: 25%; background-color: rgb(155, 52, 52);">
+                <p>Tutoriais</p>
+                <ul>
+                    <li>Empreendedorismo</li>
+                    <li>Programação</li>
+                    <li>Marketing</li>
+                </ul>
+            </section>
+            <section style="width: 25%;background-color: rgb(153, 153, 150);">
+                <p>Outros Links</p>
+                <ul>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/">Twitter</a></li>
+                    <li><a href="https://www.correios.com.br">Correios</a></li>
+                </ul>
+            </section>
+        </div>
+        <div style="width: 100%; text-align: center;">
+            <p>Nícolas Ribeiro &copy - Acadêmico em Sistemas para Internet.</p>
+        </div>
     </footer>
 </body>
 

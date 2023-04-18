@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <title>HTML</title>
+</head>
+
+<body style="margin:0;">
+
+    <header id="topo" style="text-align: center; background-color: darkolivegreen; padding: 10px;font-size: 30px;">
+        <h1>HTML<sup>Linguagem de Marcação de Hipertexto</sup></h1>
+        <h2>Tutoriais para iniciantes</h2>
+    </header>
+
+    <nav style="margin: 0;">
+        <ul
+            style="list-style: none; display: flex;justify-content: space-between;background-color: aquamarine; padding: 10px;">
+            <li style="flex-grow: 1;"><a href="aula2.html" style=" text-decoration: none;">Inicio</a></li>
+            <li style="flex-grow: 1;"><a href="aula2.html#HTML" style="text-decoration: none;">HTML</a></li>
+            <li style="flex-grow: 1;"><a href="aula2.html#tabela" style="text-decoration: none;">Tabela e Lista</a></li>
+            <li style="flex-grow: 1;"><a href="aula2.html#sobre" style="text-decoration: none">Sobre HTML, CSS e JS</a>
+            </li>
+            <li style="flex-grow: 1;"><a href="aula2.html#rodape" style="text-decoration: none">Links</a></li>
+            <li style="flex-grow: 1;"><a href="contato.html" style="text-decoration: none">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div style="margin-left: 20px;">
+        <h1>Bem vindo a tela de cadastro</h1>
+        <h3>Favor preencher seus dados para que possamos entrar em contato!</h3>
+        <form action="obrigado.html" method="get">
+            <label>Nome:</label>
+            <input type="text" title="Insira seu nome" required><br>
+            <label>Email:</label>
+            <input type="email" title="Insira um email válido" required><br><br>
+            <label>Assunto:</label>
+            <select name="Assunto" title="Escolha uma opção" required>
+                <option value="compras">Setor de compras</option>
+                <option value="vendas">Setor de vendas</option>
+                <option value="marketing">Setor de marketing</option>
+                <option value="TI" selected>Setor de TI</option>
+            </select><br><br>
+            <label>Mensagem:</label>
+            <textarea title="Insira sua mensagem" required></textarea><br><br>
+            <input type="checkbox" value="termo" required><label>Concordo com os Termos de Privacidade do
+                Site</label><br>
+            <br><input type="submit" value="Enviar mensagem">
+        </form>
+
+    </div>
+
+    <hr>
+
+    <footer id="rodape" style="padding: auto;">
+        <div style="display: flex;align-items: baseline;column-gap: 5px;">
+            <section style="width: 25%; background-color: rgb(155, 52, 52);">
+                <p>Sobre</p>
+                <ul>
+                    <li><a href="aula2.html#topo">Topo</a></li>
+                    <li>Politica de privacidade</li>
+                    <li><a href="contato.html">Fale conosco</a></li>
+                </ul>
+            </section>
+            <section style="width: 25%; background-color: rgb(153, 153, 150);">
+                <p>Referências</p>
+                <ul>
+                    <li><a href="https://devporai.com.br" target="blank">Devporai</a></li>
+                    <li><a href="https://google.com.br" target="blank">Google</a></li>
+                    <li><a href="https://wikipedia.com" target="blank">Wikipedia</a></li>
+                </ul>
+            </section>
+            <section style="width: 25%; background-color: rgb(155, 52, 52);">
+                <p>Tutoriais</p>
+                <ul>
+                    <li>Empreendedorismo</li>
+                    <li>Programação</li>
+                    <li>Marketing</li>
+                </ul>
+            </section>
+            <section style="width: 25%;background-color: rgb(153, 153, 150);">
+                <p>Outros Links</p>
+                <ul>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.twitter.com/">Twitter</a></li>
+                    <li><a href="https://www.correios.com.br">Correios</a></li>
+                </ul>
+            </section>
+        </div>
+        
+        <div style="width: 100%; text-align: center;">
+            <p>Nícolas Ribeiro &copy - Acadêmico em Sistemas para Internet.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
