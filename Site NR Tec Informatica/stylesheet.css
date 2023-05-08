@@ -1,0 +1,44 @@
+/* *{ */
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+/* } */
+
+body{
+    background-color: black;
+}
+
+#titulo{
+    text-align: center;
+    align-content: center;
+    width: auto;
+    background-color: black;
+    color: aqua; 
+}
+
+#menu{
+    margin: 0;
+}
+#listamenu{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    width: auto;
+    padding-right: 100px;
+}
+#meio{
+    color: yellow;
+    font-size: 35px;
+    text-align: center;
+    font-family: Impact;
+}
+#localizacao{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+#somos{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
