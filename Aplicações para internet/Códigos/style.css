@@ -1,6 +1,46 @@
 body{
-    background-color: rgb(170, 184, 157);
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+    margin:0
+}
+#topo{
+    text-align: center;
+    background-color: darkolivegreen;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.menulist{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.li-menulist{
+    flex-grow: 1;
+    
+}
+
+.li-menulist, a{
+    text-decoration: none;
+}
+
+#foto{
+    width: 10%;
+    margin-top: 30px;
+}
+
+#tabela{
+    display: flex;
+}   
+
+.tabelatags{
+    width:50%;
+    display: flex;
+}
+
+.tabelatags, table{
+    width: 50%;
+    background-color: rgb(31, 201, 201);
+    border: 2px;
 }
