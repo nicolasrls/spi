@@ -1,16 +1,13 @@
-body{
-    background-color: black;
-}
-
-#titulo{
+#corpo{
     text-align: center;
     align-content: center;
     width: auto;
-    background-color: black;
-    color: aqua; 
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(42,42,189,1) 48%, rgba(0,212,255,1) 100%);
+    color: rgb(10, 4, 37); 
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 0, 0)
 }
 
-#menu{
+/* #menu{
     margin: 0;
 }
 #listamenu{
@@ -21,7 +18,9 @@ body{
     background-color: aquamarine;
     width: auto;
     padding-right: 100px;
-}
+    border-radius: 7px;
+} */
+
 #meio{
     color: yellow;
     font-size: 35px;
@@ -30,9 +29,9 @@ body{
 }
 #localizacao{
     width: auto;
-    display: flex;
     align-items: center;
 }
 #somos{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
 }
