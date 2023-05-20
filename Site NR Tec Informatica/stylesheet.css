@@ -3,23 +3,9 @@
     align-content: center;
     width: auto;
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(42,42,189,1) 48%, rgba(0,212,255,1) 100%);
-    color: rgb(10, 4, 37); 
-    text-shadow: 0.1em 0.1em 0.2em rgb(255, 0, 0)
+    color: rgb(255, 255, 255); 
+    text-shadow: 0.1em 0.1em 0.2em rgb(20, 173, 153)
 }
-
-/* #menu{
-    margin: 0;
-}
-#listamenu{
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    background-color: aquamarine;
-    width: auto;
-    padding-right: 100px;
-    border-radius: 7px;
-} */
 
 #meio{
     color: yellow;
