@@ -1,0 +1,22 @@
+#corpo{
+    text-align: center;
+    align-content: center;
+    width: auto;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(42,42,189,1) 48%, rgba(0,212,255,1) 100%);
+    color: rgb(255, 255, 255); 
+    text-shadow: 0.1em 0.1em 0.2em rgb(20, 173, 153)
+}
+
+#meio{
+    color: yellow;
+    font-size: 35px;
+    font-family: Impact;
+}
+#localizacao{
+    width: auto;
+    align-items: center;
+}
+#somos{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
