@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+    <form action="./form.html" method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" style="display: block;" />
+        <label for="sobrenome">Sobrenome: </label>
+        <input type="text" id="sobrenome" name="nome" style="display: block;" />
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email" style="display: block;" placeholder="Insira um email válido.">
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" style="display: block;" placeholder="Insira sua senha"
+            minlength="8">
+        <label for="carro">Carros</label>
+        <input type="checkbox" name="carro" value="Ferrari""/>Ferrari
+        <input type="checkbox" name="carro" value="Porsche""/>Porsche
+        <br>
+        <label for=" bebida">Bebida</label>
+        <input type="radio" name="bebida" value="coca">Coca-cola
+        <input type="radio" name="bebida" value="agua">Agua
+        <br>
+        <label for="range">O quanto eu sou lindo?</label>
+        <input type="range" id="range" name="range" min="10" max="100" step="1" value="90" aria-valuenow="90" />
+        <label for="my-range">Valor atual: <span id="my-range-value"></span></label>
+        <label for="numero" style="display: block;"" >Número: </label>
+        <input type="number" name="numero" id="numero"/>
+        <label for="arquivo" style="display: block;"">Arquivo: </label>
+        <input type="file" name="arquivo" id="arquivo"/>
+        <label for="data" style="display: block;">Data: </label>
+        <input type="date" name="data" id="data"/>
+        <label for="cidade" style="display: block;">Cidade: </label>
+        <select name="cidade" id="cidade" required>
+            <option value="" selected disabled>Escolha uma cidade</option>
+            <option value="JP">João Pessoa</option>
+            <option value="Rec">Recife</option>
+            <option value="NT">Natal</option>
+        </select>
+        <label for="texto" style="display: block;">Escreva uma mensagem: </label>
+        <textarea name="texto" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit">
+
+    </form>
+</body>
+
+</html>
