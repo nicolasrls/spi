@@ -1,0 +1,17 @@
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+#password {
+    padding-right: 30px; /* Espaço para o ícone do olhinho */
+    width: 200px; /* Ajuste a largura conforme necessário */
+}
+
+#showPassword {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
