@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class q1{
     public static void main(String[] args) {
-        System.out.println("Insira a temperatura: ");
+        System.out.println("Insira a temperatura em celsius: ");
         Scanner entrada = new Scanner(System.in);
         float tempFornec = entrada.nextFloat();
         float conta = ((((tempFornec)*9)/5)+ 32);
