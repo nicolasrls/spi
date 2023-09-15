@@ -16,8 +16,8 @@ public class nome {
         //Tem que varrer o nome se for igual e captar o ultimo caracter de espaço para pegar o ultimo nome!!
 
         if(objeto1.equals(objeto2)){
-//            sobrenome = nome1.substring()
-//            System.out.println();
+//            sobrenome = nome1.substring();
+            System.out.println();
         }
 
     }
