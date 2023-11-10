@@ -1,3 +1,12 @@
+// Carrega as tarefas do localStorage no início
+var tarefasSalvas = recuperaTarefas();
+
+
+// Itera sobre as tarefas recuperadas e chama addTarefa para exibi-las
+for (var i = 0; i < tarefasSalvas.length; i++) {
+    addTarefa(tarefasSalvas[i].texto);
+}
+
 function mostrarPopup() {
     var popup = document.getElementById("popup");
     popup.style.display = "block";
@@ -8,22 +17,45 @@ function fecharPopup() {
     popup.style.display = "none";
 }
 
+function tarefaJaExiste(tarefas, textoTarefa) {
+    for (var i = 0; i < tarefas.length; i++) {
+        if (tarefas[i].texto === textoTarefa) {
+            return true; // Já existe uma tarefa com o mesmo texto
+        }
+    }
+    return false; // Não há tarefa duplicada
+}
+
 function adicionarTarefa() {
     var tarefaInput = document.getElementById("tarefaInput").value;
     if (tarefaInput.trim() !== "") {
         // Chame a função addTarefa com o texto inserido como parâmetro
         addTarefa(tarefaInput);
         fecharPopup();
+    } else {
+        alert("Favor preencher o campo da tarefa!");
     }
+}
+
+
+
+function recuperaTarefas() {
+    var tarefasSalvas = JSON.parse(localStorage.getItem('tarefas'));
+    return tarefasSalvas || []; // Retorna um array vazio se não houver tarefas salvas
 }
 
 var contadorTarefas = 1;
 
 function addTarefa(textoInserido) {
+    var tarefas = recuperaTarefas(); // Recupera as tarefas do localStorage
     var tarefa = {
         texto: textoInserido,
-        concluida: false // Inicialmente, a tarefa não está concluída
+        concluida: false
     };
+
+    tarefas.push(tarefa); // Adiciona a nova tarefa à lista
+    salvaTarefas(tarefas); // Salva as tarefas no localStorage
+    var numeroTarefa = tarefas.length;
 
     var span = document.createElement("span");
     span.textContent = contadorTarefas + ". " + tarefa.texto;
@@ -78,6 +110,9 @@ function addTarefa(textoInserido) {
     divTarefas.appendChild(paragrafo);
 }
 
+function salvaTarefas(tarefas) {
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+}
 
 function executarAcao(acao, span) {
     if (acao === "Marcar como concluída" || acao === "Desmarcar como concluída") {
@@ -93,4 +128,9 @@ function executarAcao(acao, span) {
     }
 }
 
-
+function limparTarefas() {
+    var divTarefas = document.getElementById("divTarefas");
+    divTarefas.innerHTML = ''; // Remove todos os elementos filhos da div
+    // Limpa as tarefas no localStorage
+    localStorage.removeItem('tarefas');
+}
