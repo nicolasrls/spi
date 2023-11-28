@@ -1,6 +1,3 @@
-
-window.addEventListener('load', carregarTarefas());
-
 function mostrarPopup() {
     var popup = document.getElementById("popup");
     popup.style.display = "block";
@@ -20,7 +17,6 @@ function limparTarefas() {
     var divTarefas = document.getElementById("divTarefas");
     divTarefas.innerHTML = '';
 }
-
 
 function criarElementoTarefa(tarefa) {
     var dropdown = document.createElement("div");
@@ -64,17 +60,17 @@ function criarElementoTarefa(tarefa) {
     dropdown.appendChild(dropdownMenu);
 
     var span = document.createElement("span");
-    span.textContent = tarefa.numero + ". " + tarefa.texto;
+    span.textContent = tarefa.texto;
+
+    if (tarefa.concluida) {
+        span.style.textDecoration = "line-through";
+    }
 
     var paragrafo = document.createElement("p");
     paragrafo.appendChild(span);
     paragrafo.appendChild(dropdown);
-    var divTarefas = document.getElementById("divTarefas");
-    divTarefas.appendChild(paragrafo);
-
-    return divTarefas;
+    return paragrafo;
 }
-
 
 function adicionarTarefa() {
     var tarefaInput = document.getElementById("tarefaInput").value;
@@ -85,7 +81,6 @@ function adicionarTarefa() {
     }
 }
 
-
 function addTarefa(textoInserido) {
     var contadorTarefas = parseInt(localStorage.getItem('contadorTarefas')) || 1;
     var tarefa = {
@@ -95,13 +90,13 @@ function addTarefa(textoInserido) {
     };
     var span = document.createElement("span");
     tarefa.numero += contadorTarefas;
-    span.textContent = tarefa.numero + ". " + tarefa.texto; // conteúdo da tarefa eh esse numero inicial + o texto dela
+    span.textContent = tarefa.texto; // conteúdo da tarefa eh esse numero inicial + o texto dela
     contadorTarefas++; // Incrementa o contador de tarefas
     localStorage.setItem('contadorTarefas', contadorTarefas);
     criarElementoTarefa(tarefa);
     localStorage.setItem('tarefa_' + tarefa.numero, JSON.stringify(tarefa));
+    carregarTarefas();
 }
-
 
 function executarAcao(acao, span, tarefa) {
     if (acao === "Marcar como concluída" || acao === "Desmarcar como concluída") {
@@ -118,24 +113,15 @@ function executarAcao(acao, span, tarefa) {
         localStorage.setItem('tarefa_' + tarefa.numero, JSON.stringify(tarefa));
     } else if (acao === "Remover tarefa") {
         span.parentElement.remove();
-        // Obtém o número da tarefa a partir do texto do span
-        var numeroTarefa = parseInt(span.textContent.split(".")[0]);
+        // Obtém o número da tarefa diretamente do objeto tarefa
+        var numeroTarefa = tarefa.numero;
         // Remove a tarefa do localStorage
         localStorage.removeItem('tarefa_' + numeroTarefa);
-        // Remove o parágrafo (que contém a tarefa) do DOM
-        paragrafo.remove();
-        // Decrementa o contadorTarefas
-        var contadorTarefas = parseInt(localStorage.getItem('contadorTarefas')) || 0;
-        contadorTarefas--;
-        // Atualiza o localStorage com o novo valor do contadorTarefas
-        localStorage.setItem('contadorTarefas', contadorTarefas.toString());
     }
 }
 
-// Função para carregar tarefas do localStorage
 function carregarTarefas() {
     var divTarefas = document.getElementById("divTarefas");
-
     // Limpar o conteúdo da div para evitar duplicatas
     divTarefas.innerHTML = '';
 
@@ -144,31 +130,21 @@ function carregarTarefas() {
     // Iterar sobre as chaves do localStorage e recuperar tarefas
     for (var i = 0; i < localStorage.length; i++) {
         var key = localStorage.key(i);
-
         // Verificar se a chave representa uma tarefa
         if (key.startsWith('tarefa_')) {
             var tarefa = JSON.parse(localStorage.getItem(key));
-
             // Criar elemento HTML para exibir a tarefa
             var elementoTarefa = criarElementoTarefa(tarefa);
-
             // Aplicar estilo de "line-through" se a tarefa estiver concluída
             if (tarefa.concluida) {
                 var span = elementoTarefa.querySelector("span");
                 span.style.textDecoration = "line-through";
+                console.log(tarefa);
             }
-
             // Adicionar o elemento à array
             elementosTarefa.push(elementoTarefa);
         }
     }
-
-    // Ordenar a array com base no número da tarefa
-    elementosTarefa.sort(function (a, b) {
-        var numeroA = parseInt(a.querySelector("span").textContent.split(".")[0]);
-        var numeroB = parseInt(b.querySelector("span").textContent.split(".")[0]);
-        return numeroA - numeroB;
-    });
 
     // Adicionar todos os elementos da tarefa à divTarefas
     elementosTarefa.forEach(function (elemento) {
@@ -176,3 +152,4 @@ function carregarTarefas() {
     });
 }
 
+window.addEventListener('load', carregarTarefas());
