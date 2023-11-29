@@ -8,5 +8,4 @@ function saudacaoDoDia(){
     console.log(hora);
     return saudacao;
 }
-
 console.log(saudacaoDoDia());
